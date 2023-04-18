@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .all{
+            max-width:500px;
+            text-align: center;
+            margin-left: 450px;
+        }
+        .real{
+            border-radius: 20px;
+            box-shadow: 10px 10px grey;
+            background-color: rgb(15, 14, 14);
+        }
+        .new{
+            margin-left: 4px;
+            
+        }
+        button:active{
+            width: 10px;
+            border: 2px solid white;
+        }
+        @media(max-width:1000px){
+            .all{
+               margin-left: 300px;
+            }
+            
+        }
+        @media(max-width:800px){
+            .all{
+               margin-left: 200px;
+            }
+            
+        }
+        @media(max-width:715px){
+            .all{
+               margin-left: 50px;
+            }
+            
+        }
+        @media(max-width:565px){
+            .all{
+               margin-left: 0px;
+               max-width: 450px;
+            }
+            
+        }
+    </style>
+</head>
+<body class="bg-light">
+        <section class="all">
+            <div class="container">
+
+                <div class="row m-5 p-5 border real">
+
+                    <div class="col   ">
+                        <input type="text" id="output" placeholder="0">
+                    </div>
+                   
+                     <div class="row mt-4 new">
+
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='9'" class="btn btn-primary">9</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='/'" class="btn btn-primary">/</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='%'" class="btn btn-primary">%</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="document.getElementById('output').value +='**'" class="btn btn-primary">**</button>
+                            </div>
+                        
+
+                    </div>
+                     <div class="row mt-4 new">
+
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='6'" class="btn btn-primary">6</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='7'" class="btn btn-primary"> 7</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='8'" class="btn btn-primary">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="document.getElementById('output').value +='*'" class="btn btn-primary">*</button>
+                            </div>
+                        
+
+                    </div>
+                    <div class="row mt-4 new">
+
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='3'" class="btn btn-primary">3</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='4'" class="btn btn-primary">4</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='5'" class="btn btn-primary">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="document.getElementById('output').value +='+'" class="btn btn-primary">+</button>
+                            </div>
+                        
+
+                    </div>
+                    <div class="row mt-4 new">
+
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='0'" class="btn btn-primary">0</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='1'" class="btn btn-primary">1</button>
+                        </div>
+                        <div class="col-3">
+                        <button type="button" onclick="document.getElementById('output').value +='2'" class="btn btn-primary">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button"  onclick="document.getElementById('output').value= eval(document.getElementById('output').value)" class="btn btn-primary">=</button>
+                            </div>
+                          
+                        
+
+                    </div>
+                    <div class="row mt-3 new" >
+                        <div class="col-3" >
+                            <button type="button" onclick="deleteCal()" class="btn btn-danger" style="border-radius: 50%;">C</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        
+
+        <script>
+            function deleteCal(){
+                document.getElementById('output').value='';
+            }
+        </script>
+
+
+
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
