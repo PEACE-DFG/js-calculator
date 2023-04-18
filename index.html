@@ -31,11 +31,15 @@
             .all{
                margin-left: 300px;
             }
+        
             
         }
         @media(max-width:800px){
             .all{
                margin-left: 200px;
+            }
+            .real{
+                background-color: rgb(229, 143, 143);
             }
             
         }
@@ -43,12 +47,43 @@
             .all{
                margin-left: 50px;
             }
+           
             
         }
         @media(max-width:565px){
             .all{
                margin-left: 0px;
                max-width: 450px;
+            }
+            .real{
+                background-color: rgb(204, 226, 117);
+            }
+            
+        }
+        @media(max-width:400px){
+            .all{
+               margin-left: 0px;
+               max-width: 500px;
+               text-align: start;
+            }
+            .new{
+                margin-left: 0px;
+                
+            }
+            .real{
+                background-color: rgb(178, 235, 239);
+            }
+            
+        }
+        @media(max-width:380px){
+            .all{
+               margin-left: 0px;
+               max-width: 400px;
+               text-align: start;
+            }
+            .new{
+                margin-left: 0px;
+                
             }
             
         }
@@ -68,16 +103,16 @@
                      <div class="row mt-4 new">
 
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='9'" class="btn btn-primary">9</button>
+                        <button type="button" onclick="document.getElementById('output').value +='9'" class="btn btn-primary btn-sm">9</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='/'" class="btn btn-primary">/</button>
+                        <button type="button" onclick="document.getElementById('output').value +='/'" class="btn btn-primary btn-sm">/</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='%'" class="btn btn-primary">%</button>
+                        <button type="button" onclick="document.getElementById('output').value +='%'" class="btn btn-primary btn-sm">%</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" onclick="document.getElementById('output').value +='**'" class="btn btn-primary">**</button>
+                            <button type="button" onclick="document.getElementById('output').value +='**'" class="btn btn-primary btn-sm">**</button>
                             </div>
                         
 
@@ -85,16 +120,16 @@
                      <div class="row mt-4 new">
 
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='6'" class="btn btn-primary">6</button>
+                        <button type="button" onclick="document.getElementById('output').value +='6'" class="btn btn-primary btn-sm">6</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='7'" class="btn btn-primary"> 7</button>
+                        <button type="button" onclick="document.getElementById('output').value +='7'" class="btn btn-primary btn-sm"> 7</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='8'" class="btn btn-primary">8</button>
+                        <button type="button" onclick="document.getElementById('output').value +='8'" class="btn btn-primary btn-sm">8</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" onclick="document.getElementById('output').value +='*'" class="btn btn-primary">*</button>
+                            <button type="button" onclick="document.getElementById('output').value +='*'" class="btn btn-primary btn-sm">*</button>
                             </div>
                         
 
@@ -102,16 +137,16 @@
                     <div class="row mt-4 new">
 
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='3'" class="btn btn-primary">3</button>
+                        <button type="button" onclick="document.getElementById('output').value +='3'" class="btn btn-primary btn-sm">3</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='4'" class="btn btn-primary">4</button>
+                        <button type="button" onclick="document.getElementById('output').value +='4'" class="btn btn-primary btn-sm">4</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='5'" class="btn btn-primary">5</button>
+                        <button type="button" onclick="document.getElementById('output').value +='5'" class="btn btn-primary btn-sm">5</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" onclick="document.getElementById('output').value +='+'" class="btn btn-primary">+</button>
+                            <button type="button" onclick="document.getElementById('output').value +='+'" class="btn btn-primary btn-sm">+</button>
                             </div>
                         
 
@@ -119,16 +154,16 @@
                     <div class="row mt-4 new">
 
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='0'" class="btn btn-primary">0</button>
+                        <button type="button" onclick="document.getElementById('output').value +='0'" class="btn btn-primary btn-sm">0</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='1'" class="btn btn-primary">1</button>
+                        <button type="button" onclick="document.getElementById('output').value +='1'" class="btn btn-primary btn-sm">1</button>
                         </div>
                         <div class="col-3">
-                        <button type="button" onclick="document.getElementById('output').value +='2'" class="btn btn-primary">2</button>
+                        <button type="button" onclick="document.getElementById('output').value +='2'" class="btn btn-primary btn-sm">2</button>
                         </div>
                         <div class="col-3">
-                            <button type="button"  onclick="document.getElementById('output').value= eval(document.getElementById('output').value)" class="btn btn-primary">=</button>
+                            <button type="button"  onclick="document.getElementById('output').value= eval(document.getElementById('output').value)" class="btn btn-primary btn-sm">=</button>
                             </div>
                           
                         
@@ -136,11 +171,11 @@
                     </div>
                     <div class="row mt-3 new" >
                         <div class="col-3" >
-                            <button type="button" onclick="deleteCal()" class="btn btn-danger" style="border-radius: 50%;">C</button>
+                            <button type="button" onclick="deleteCal()" class="btn btn-danger btn-sm" style="border-radius: 50%;">C</button>
 
                         </div>
                         <div class="col-3" >
-                            <button type="button" onclick="singledel()" class="btn btn-danger" style="border-radius: 50%;">dl</button>
+                            <button type="button" onclick="singledel()" class="btn btn-danger btn-sm" style="border-radius: 50%;">dl</button>
 
                         </div>
 
