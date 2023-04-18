@@ -11,6 +11,7 @@
             max-width:500px;
             text-align: center;
             margin-left: 450px;
+            
         }
         .real{
             border-radius: 20px;
@@ -25,6 +26,7 @@
             width: 10px;
             border: 2px solid white;
         }
+      
         @media(max-width:1000px){
             .all{
                margin-left: 300px;
@@ -53,12 +55,13 @@
     </style>
 </head>
 <body class="bg-light">
+  
         <section class="all">
             <div class="container">
 
                 <div class="row m-5 p-5 border real">
 
-                    <div class="col   ">
+                    <div class="col  ">
                         <input type="text" id="output" placeholder="0">
                     </div>
                    
@@ -136,6 +139,10 @@
                             <button type="button" onclick="deleteCal()" class="btn btn-danger" style="border-radius: 50%;">C</button>
 
                         </div>
+                        <div class="col-3" >
+                            <button type="button" onclick="singledel()" class="btn btn-danger" style="border-radius: 50%;">dl</button>
+
+                        </div>
 
                     </div>
 
@@ -149,8 +156,17 @@
         
 
         <script>
+            
             function deleteCal(){
-                document.getElementById('output').value='';
+                document.getElementById('output').value ='';
+            }
+
+
+            function singledel(){
+                document.getElementById('output').value=document.getElementById('output').value.slice(0,-1)
+                
+               
+              
             }
         </script>
 
