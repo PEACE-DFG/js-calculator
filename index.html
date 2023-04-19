@@ -18,6 +18,9 @@
         button{
             width: 50%;
             box-shadow: 1px 1px blue;
+            font-size: 5px;
+            
+
         }
         .real{
             border-radius: 20px;
@@ -29,7 +32,6 @@
             
         }
         button:active{
-            width: 10px;
             border: 2px solid white;
         }
       
@@ -65,20 +67,7 @@
         @media(max-width:400px){
             .all{
                margin-left: 0px;
-               max-width: 500px;
-               text-align: start;
-            }
-            .new{
-                margin-left: 0px;
-                
-            }
-          
-            
-        }
-        @media(max-width:380px){
-            .all{
-               margin-left: 0px;
-               max-width: 400px;
+               max-width: 600px;
                text-align: start;
             }
             .new{
@@ -87,6 +76,39 @@
             }
             button{
                 width: 100%;
+            }
+          
+          
+            
+        }
+        @media(max-width:380px){
+            .all{
+               margin-left: 0px;
+               max-width: 600px;
+            }
+            .new{
+                margin-left: 0px;
+                
+            }
+            button{
+                width: 100%;
+            }
+          
+            
+        }
+        @media(max-width:366px){
+            .all{
+                margin-left: 0px;
+                max-width: 600px;
+             }
+             .new{
+                margin-left: 0px;
+                
+            }
+           
+            button{
+                width: 100%;
+                padding:0rem 0.2rem;
             }
           
             
@@ -95,7 +117,9 @@
            
             button{
                 width: 100%;
+                padding:0rem 0.2rem;
             }
+            
           
             
         }
@@ -103,7 +127,18 @@
            
             button{
                 width: 100%;
-                padding: 0px;
+                padding:0rem 0.2rem;
+               
+            }
+          
+            
+        }
+        @media(max-width:343px){
+           
+            button{
+                width: 100%;
+                padding:0rem 0.2rem;
+               
             }
           
             
@@ -121,82 +156,82 @@
                         <input type="text" id="output" placeholder="0">
                     </div>
                    
-                     <div class="row mt-4 new">
+                     <div class="row mt-4 gx-0 new">
 
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='9'" class="btn btn-primary btn-sm text-center">9</button>
+                        <button type="button" onclick="document.getElementById('output').value +='9'" class="btn btn-primary w-100 btn-sm text-center">9</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='/'" class="btn btn-primary btn-sm text-center">/</button>
+                        <button type="button" onclick="document.getElementById('output').value +='/'" class="btn btn-primary w-100 btn-sm text-center">/</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='%'" class="btn btn-primary btn-sm text-center">%</button>
+                        <button type="button" onclick="document.getElementById('output').value +='%'" class="btn btn-primary w-100 btn-sm text-center">%</button>
                         </div>
                         <div class="col-3 p-1">
-                            <button type="button" onclick="document.getElementById('output').value +='**'" class="btn btn-primary btn-sm text-center">**</button>
+                            <button type="button" onclick="document.getElementById('output').value +='**'" class="btn btn-primary w-100 btn-sm text-center">**</button>
                             </div>
                         
 
                     </div>
-                     <div class="row mt-4 new">
+                     <div class="row mt-4 gx-0 new">
 
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='6'" class="btn btn-primary btn-sm text-center">6</button>
+                        <button type="button" onclick="document.getElementById('output').value +='6'" class="btn btn-primary w-100 btn-sm text-center">6</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='7'" class="btn btn-primary btn-sm text-center"> 7</button>
+                        <button type="button" onclick="document.getElementById('output').value +='7'" class="btn btn-primary w-100 btn-sm text-center"> 7</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='8'" class="btn btn-primary btn-sm text-center">8</button>
+                        <button type="button" onclick="document.getElementById('output').value +='8'" class="btn btn-primary w-100 btn-sm text-center">8</button>
                         </div>
                         <div class="col-3 p-1">
-                            <button type="button" onclick="document.getElementById('output').value +='*'" class="btn btn-primary btn-sm text-center">*</button>
+                            <button type="button" onclick="document.getElementById('output').value +='*'" class="btn btn-primary w-100 btn-sm text-center">*</button>
                             </div>
                         
 
                     </div>
-                    <div class="row mt-4 new">
+                    <div class="row mt-4 gx-0 new">
 
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='3'" class="btn btn-primary btn-sm text-center">3</button>
+                        <button type="button" onclick="document.getElementById('output').value +='3'" class="btn btn-primary w-100 btn-sm text-center">3</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='4'" class="btn btn-primary btn-sm text-center">4</button>
+                        <button type="button" onclick="document.getElementById('output').value +='4'" class="btn btn-primary w-100 btn-sm text-center">4</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='5'" class="btn btn-primary btn-sm text-center">5</button>
+                        <button type="button" onclick="document.getElementById('output').value +='5'" class="btn btn-primary w-100 btn-sm text-center">5</button>
                         </div>
                         <div class="col-3 p-1">
-                            <button type="button" onclick="document.getElementById('output').value +='+'" class="btn btn-primary btn-sm text-center">+</button>
+                            <button type="button" onclick="document.getElementById('output').value +='+'" class="btn btn-primary w-100 btn-sm text-center">+</button>
                             </div>
                         
 
                     </div>
-                    <div class="row mt-4 new">
+                    <div class="row mt-4 gx-0 new">
 
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='0'" class="btn btn-primary btn-sm text-center">0</button>
+                        <button type="button" onclick="document.getElementById('output').value +='0'" class="btn btn-primary w-100 btn-sm text-center">0</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='1'" class="btn btn-primary btn-sm text-center">1</button>
+                        <button type="button" onclick="document.getElementById('output').value +='1'" class="btn btn-primary w-100 btn-sm text-center">1</button>
                         </div>
                         <div class="col-3 p-1">
-                        <button type="button" onclick="document.getElementById('output').value +='2'" class="btn btn-primary btn-sm text-center">2</button>
+                        <button type="button" onclick="document.getElementById('output').value +='2'" class="btn btn-primary w-100 btn-sm text-center">2</button>
                         </div>
                         <div class="col-3 p-1">
-                            <button type="button"  onclick="document.getElementById('output').value= eval(document.getElementById('output').value)" class="btn btn-primary btn-sm">=</button>
+                            <button type="button"  onclick="document.getElementById('output').value= eval(document.getElementById('output').value)" class="btn btn-primary w-100 btn-sm">=</button>
                             </div>
                           
                         
 
                     </div>
-                    <div class="row mt-3 new" >
+                    <div class="row mt-3 gx-0 new" >
                         <div class="col-3 p-1" >
-                            <button type="button" onclick="deleteCal()" class="btn btn-danger btn-sm text-center" style="border-radius: 50%;">C</button>
+                            <button type="button" onclick="deleteCal()" class="btn btn-danger  w-100 btn-sm bs-btn-padding-x: 0.2rem text-center" style="border-radius: 50%;">C</button>
 
                         </div>
                         <div class="col-3 p-1" >
-                            <button type="button" onclick="singledel()" class="btn btn-danger btn-sm text-center" style="border-radius: 50%;">dl</button>
+                            <button type="button" onclick="singledel()" class="btn btn-danger w-100 btn-sm text-center" style="border-radius: 50%;">dl</button>
 
                         </div>
 
